@@ -32,9 +32,4 @@ def analyze_image_with_query(query, model, encoded_image):
 
     return chat_completion.choices[0].message.content
 
-# Example usage
-encoded_image = encode_image(r"F:\AI-Doctor\data\acne.jpg")
-query = "whats wrong with my face"
-model = "llama-3.2-90b-vision-preview"
-response = analyze_image_with_query(query, model, encoded_image)
-print("Response from API:", response)
+

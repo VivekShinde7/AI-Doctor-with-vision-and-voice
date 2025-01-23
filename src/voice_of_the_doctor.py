@@ -3,7 +3,7 @@
 # load_dotenv()
 
 
-#Step2: Use Model for Text output to Voice
+
 
 import elevenlabs
 from elevenlabs.client import ElevenLabs
@@ -30,9 +30,9 @@ def text_to_speech_with_gtts(input_text, output_filepath):
     audio_segment = AudioSegment.from_file(output_filepath, format="mp3")
     play(audio_segment)
 
-
-input_text="Hi this is Vivek, autoplay testing!"
-text_to_speech_with_gtts(input_text=input_text, output_filepath=r"testing_audios/gtts_testing_autoplay.mp3")
+#testing
+#input_text="Hi this is Vivek, autoplay testing!"
+#text_to_speech_with_gtts(input_text=input_text, output_filepath=r"testing_audios/gtts_testing_autoplay.mp3")
 
 
 def text_to_speech_with_elevenlabs(input_text, output_filepath):
@@ -55,5 +55,6 @@ def text_to_speech_with_elevenlabs(input_text, output_filepath):
     audio_segment = AudioSegment.from_file(output_filepath, format="mp3")
     play(audio_segment)
 
-input_text="Hi this is Vivek, autoplay testing!"
+#testing
+#input_text="Hi this is Vivek, autoplay testing!"
 #text_to_speech_with_elevenlabs(input_text, output_filepath=r"testing_audios/elevenlabs_testing_autoplay.mp3")
